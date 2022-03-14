@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
     staticLib_arm64 *obj = [staticLib_arm64 new];
     [obj method1];
     [obj method2];

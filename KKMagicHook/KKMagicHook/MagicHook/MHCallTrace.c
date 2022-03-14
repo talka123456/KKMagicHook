@@ -130,6 +130,7 @@ static inline uintptr_t getLRRegisterValue()
     return lr;
 }
 
+// 通过汇编 hook msg_send()发送过来的入口
 void hook_objc_msgSend_before(id self, SEL sel, uintptr_t lr)
 {
     if (!mainThreadStack) {
